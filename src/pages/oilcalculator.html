@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate oil spendings</title>
+
+    <link rel="stylesheet" href="/src/styles/cos.css">
+    <script src="/src/js/cos.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <p>This simple calculating algorithm is made as a small school project. </p>
+        <p>It helps to calculate the approximate amount of the oil that a vehicle might burn while going to a specified destination.</p>
+
+        <div class="container">
+            <div class="formula">
+                <p>The formula that this algorithm uses is  
+                    <br> 
+                    <span>x &frasl; d = a &frasl;100</span>
+                </p>
+                <p>Where: 
+                    <br> x - is the amount of oil that the vehicle will burn. 
+                    <br> d - is the distance between the starting point and the destination.
+                    <br> a - is the average oil usage of the vehicle in 100 km.
+                </p>
+                <div></div>
+            </div>
+            <div class="input-field">
+                <form class="form">
+                    Value of d =  <input type="text" id="d" /><br>
+                    Value of a =  <input type="text" id="a" /><br>
+                    <input type="button" onClick="calculate()" Value="Calculate" /><br>
+                </form>
+                <p id="result">The Value of x is: </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
