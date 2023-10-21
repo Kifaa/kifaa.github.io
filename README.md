@@ -7,5 +7,6 @@ My name is Hakif Kadriu and welcome to this dumb waste of time ->
 Below is the update log sorted from latest to oldest
 
 
+version 22/10/2023: Front Page is responsive but not quite finished.
 version 21/10/2023: Tested the download files function.
 version 17/10/2023: The start of a new project. Main page + simple program page with a little js very nice lets go.
