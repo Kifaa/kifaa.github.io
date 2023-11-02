@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 100%;
+}
+
+@media only screen and (min-width: 737px){
+    body{
+        background: url("../images/nightsky-bg-dark.jpg") no-repeat center fixed; 
+        background-position-y: 85%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        z-index: -15;
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 1.5vh 0;
+
+        background-color: rgb(13,45,54);
+    }
+
+    .navbar-items{
+        /* background-color: black; */
+        /* border-radius: 8px; */
+        
+        padding: 5px;
+        
+        color: white;
+        /* font-weight: bold; */
+        font-size: 150%;
+    }
+    
+    .content{
+        /* Sizes and shit */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* gap: 40px; */
+        align-items: center; 
+        text-align: center; 
+        width: 70vw;
+        height: 60vh;
+        border-radius: 20px;
+        flex-wrap: nowrap;
+
+        /* Center horizontally and vertically in the center of the page */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);      
+        /* box-sizing: border-box; Works for removing the scroll bar then width is 100%*/
+
+        /* Styles */
+        color: white;
+        /* border: 1px solid yellow; */
+        backdrop-filter: blur(3.5px) brightness(90%);
+    }
+    .content-items{
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+    #item1{
+        padding: 3rem 0;
+        font-size: 4rem;
+    }
+    #item2{
+        padding: 1rem 0;
+        font-size: 1.2rem;
+    }
+    .icons-container{
+        display: flex;
+        margin-top: 2rem;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .icons-container .bi{
+        font-size: 1.5rem;
+    }
+
+    .content-footer{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .content-footer-items{
+        border: 2px solid white;
+        border-radius: 30px;
+        padding: 10px;
+
+        font-size: 1.4rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+@media only screen and (max-width: 700px) { 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-image: url("../images/aesthetic_moon.jpg");
+        background-position: center;
+        background-position-y: 90%; 
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .navbar, .content-footer{
+        display: none;
+    }
+
+    .content{
+        height: 100vh;
+        /* border: 1px solid black; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+
+        align-items: center;
+        text-align: center;
+    
+        font-size: 1.2rem;
+        line-height: 120%;
+        font-style: italic;
+    }
+
+}
+
