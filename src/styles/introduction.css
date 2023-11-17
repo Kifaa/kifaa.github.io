@@ -9,7 +9,7 @@ html{
 
 @media only screen and (min-width: 737px){
     body{
-        background: url("../images/nightsky-bg-dark.jpg") no-repeat center fixed; 
+        background: url("../images/desktop/nightsky-bg-dark.jpg") no-repeat center fixed; 
         background-position-y: 85%;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -116,7 +116,7 @@ html{
     }
 
     body{
-        background-image: url("../images/aesthetic_moon.jpg");
+        background-image: url("../images/mobile/aesthetic_moon.jpg");
         background-position: center;
         background-position-y: 90%; 
 
