@@ -118,7 +118,8 @@ html{
     body{
         background-image: url("../images/mobile/aesthetic_moon.jpg");
         background-position: center;
-        background-position-y: 90%; 
+        /* background-size: auto auto; */
+        /* background-position-y: -60vh;  */
 
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }

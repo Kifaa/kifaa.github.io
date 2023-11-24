@@ -3,3 +3,4 @@ function calculate(){
     a = document.getElementById("a").value;
     document.getElementById("result").innerHTML = "The result is: " + d * a / 100 + " litres";
 }
+

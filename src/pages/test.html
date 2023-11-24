@@ -5,65 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing Responsive Navigation Bar</title>
 
-    <link rel="stylesheet" href="/src/styles/test.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="/src/styles/test.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> -->
+    <link rel="icon" href="../images/favicon.ico">
+
+    <!-- <script src="../js/testscript.js"></script> -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
 </head>
 <body>
-    <div class="topnav">
-        <a href="javascript:void(0)" onclick="extendNavbar()"><i class="bi bi-list"></i></a>
-        <div id="topnav">
-            <a href="/index.html" style="animation: fadein 1s;">Home</a>
-            <a href="./introduction.html" style="animation: fadein 2s;">About Me</a>
-            <a href="./oilcalculator.html" style="animation: fadein 3s;">Oil Calculator</a>
-        </div>
-    </div>
+    <div id="mydiv"></div>
 
-    <div style="text-align: center;">
-        <h1 id="p1">Kifa</h1>
-        <br>
-        <form>
-            <label for="font-size">Jepni madhesine e Fontit per Paragrafin e mesiperm</label>
-            <input type="range" min="12" max="72" value="16" id="font-size">
-        </form>
-    </div>
+    <script type="text/babel">
+      function Hello() {
+        return <h1>Hello World!</h1>;
+      }
 
-
-    <script>
-        var slider = document.getElementById('font-size');
-
-        slider.addEventListener('input', function() {
-            var size = slider.value;
-            document.getElementById("p1").style.fontSize = size + "px";
-        });
-
-        function changevalue(){
-            
-        }
-        
-        function extendNavbar(){
-            var x = document.getElementById("topnav");
-            if(x.style.display === "block"){
-                x.style.animation = "fadeout 0.5s forwards";
-                setTimeout(() => {
-                    x.style.display = "none";
-                }, 600);
-            }
-            else{
-                x.style.display = "block";
-                x.style.animation = "fadein"
-            }
-        }
-
-        // function downloadshit(){
-        //     var link = document.createElement('a');
-        //     document.body.appendChild(link);
-        //     link.href = "../images/desktop/bg-berserk.png";
-        //     link.download = "Image"; 
-        //     link.click();
-        // }
-
+      const container = document.getElementById('mydiv');
+      const root = ReactDOM.createRoot(container);
+      root.render(<Hello />)
     </script>
+
 </body>
 </html>
-
-<a></a>
